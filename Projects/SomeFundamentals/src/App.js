@@ -1,13 +1,14 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View } from 'react-native';
 
+import FirstComponent from './components/1_FirstComponent';
+import CompDefault, {Comp2,Comp3} from './components/2_MultiComponents'; //CompDefault is the default Component
 
-/*function App(){
-  const jsx = <Text>My first component</Text>;
-  return jsx;
-}
-export default App;*/
-
-//OR
-
-export default () => <Text>My first component!!</Text>;
+export default () => 
+  (
+    <View>
+      <FirstComponent />
+      <CompDefault />
+      <Comp3 />
+    </View>
+  );
