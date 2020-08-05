@@ -15,5 +15,11 @@ export default () =>
       <Comp3 />
       <YellowBoxConsoleWarn />
       <ComponentWithProperties min={3} max={20} name="Pedro"/>
+      <ComponentWithProperties min={3} max={20} name="Pedro"/>
+      <ComponentWithProperties min={3} max={20} name="Pedro"/>
+      <ComponentWithProperties min={3} max={20} name="Pedro"/>
+      <ComponentWithProperties min={3} max={20} name="Pedro"/>
+      <ComponentWithProperties min={3} max={20} name="Pedro"/>
+      <ComponentWithProperties min={3} max={20} name="Pedro"/>
     </View>
   );
