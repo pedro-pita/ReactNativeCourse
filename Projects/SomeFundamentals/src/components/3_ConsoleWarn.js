@@ -4,6 +4,6 @@ import { Text } from 'react-native';
 export default () => {
     console.warn('HEYYYYYYYYYYY!');
     return (
-        <Text>Test console.warm()</Text>
+        <Text>Test console.warn()</Text>
     )
 };
