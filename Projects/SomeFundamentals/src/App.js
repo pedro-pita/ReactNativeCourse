@@ -6,6 +6,7 @@ import CompDefault, {Comp2,Comp3} from './components/2_MultiComponents'; //CompD
 import YellowBoxConsoleWarn from './components/3_ConsoleWarn'; 
 import ComponentWithProperties from './components/4_ComponentWithProperties';
 import Fragments from './components/5_Fragments';
+import Button from './components/6_Button';
 
 export default () => 
   (
@@ -19,5 +20,6 @@ export default () =>
       <ComponentWithProperties min={3} max={20} name="Pedro"/>
       <ComponentWithProperties min={3} max={20} name="Pedro"/>
       <Fragments first="pedro" second="pita"/>
+      <Button />
     </View>
   );
