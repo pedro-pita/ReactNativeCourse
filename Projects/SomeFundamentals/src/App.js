@@ -7,6 +7,7 @@ import YellowBoxConsoleWarn from './components/3_ConsoleWarn';
 import ComponentWithProperties from './components/4_ComponentWithProperties';
 import Fragments from './components/5_Fragments';
 import Button from './components/6_Button';
+import UseState from './components/7_UseState';
 
 export default () => 
   (
@@ -21,5 +22,6 @@ export default () =>
       <ComponentWithProperties min={3} max={20} name="Pedro"/>
       <Fragments first="pedro" second="pita"/>
       <Button />
+      <UseState number={10} increment={10}/>
     </View>
   );
