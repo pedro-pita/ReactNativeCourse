@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
 import FirstComponent from './components/1_FirstComponent';
 import CompDefault, {Comp2,Comp3} from './components/2_MultiComponents'; //CompDefault is the default Component
@@ -11,10 +11,12 @@ import UseState from './components/7_UseState';
 import DirectFather from './components/9_DirectCommunication/Father';
 import IndirectFather from './components/10_IndirectCommunication/Father';
 import CounterV2 from './components/11_DirectAndIndirectCommunication/CounterV2';
+import DifferentiateAndroidFromIos from './components/12_DifferentiateAndroidFromIos';
+import ConditionalRendering from './components/13_ConditionalRendering';
 
 export default () => 
   (
-    <View>
+    /*<View>
       <FirstComponent />
       <CompDefault />
       <Comp2 />
@@ -29,5 +31,9 @@ export default () =>
       <DirectFather/>
       <IndirectFather/>
       <CounterV2/>
-    </View>
+      <DifferentiateAndroidFromIos/>
+    </View>*/
+    <SafeAreaView>
+      <ConditionalRendering num={2} />
+    </SafeAreaView>
   );
