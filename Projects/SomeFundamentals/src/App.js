@@ -8,6 +8,7 @@ import ComponentWithProperties from './components/4_ComponentWithProperties';
 import Fragments from './components/5_Fragments';
 import Button from './components/6_Button';
 import UseState from './components/7_UseState';
+import Father from './components/9_DirectCommunication/Father';
 
 export default () => 
   (
@@ -23,5 +24,6 @@ export default () =>
       <Fragments first="pedro" second="pita"/>
       <Button />
       <UseState number={10} increment={10}/>
+      <Father/>
     </View>
   );
