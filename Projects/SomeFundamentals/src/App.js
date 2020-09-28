@@ -10,6 +10,7 @@ import Button from './components/6_Button';
 import UseState from './components/7_UseState';
 import DirectFather from './components/9_DirectCommunication/Father';
 import IndirectFather from './components/10_IndirectCommunication/Father';
+import CounterV2 from './components/11_DirectAndIndirectCommunication/CounterV2';
 
 export default () => 
   (
@@ -27,5 +28,6 @@ export default () =>
       <UseState number={10} increment={10}/>
       <DirectFather/>
       <IndirectFather/>
+      <CounterV2/>
     </View>
   );

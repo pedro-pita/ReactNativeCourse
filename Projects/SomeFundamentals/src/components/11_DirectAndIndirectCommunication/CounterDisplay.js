@@ -1,0 +1,10 @@
+import React, { Fragment } from 'react'
+import { Text } from 'react-native'
+
+export default props => {
+    return (
+        <Text>
+            {props.num}
+        </Text>
+    )
+}
