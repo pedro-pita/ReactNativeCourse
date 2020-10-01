@@ -1,6 +1,4 @@
 import React, { Fragment } from 'react';
-import { Text } from 'react-native';
-
 import Son from './Son'
 
 export default props => {

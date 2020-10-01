@@ -12,11 +12,13 @@ import DirectFather from './components/9_DirectCommunication/Father';
 import IndirectFather from './components/10_IndirectCommunication/Father';
 import CounterV2 from './components/11_DirectAndIndirectCommunication/CounterV2';
 import DifferentiateAndroidFromIos from './components/12_DifferentiateAndroidFromIos';
-import ConditionalRendering from './components/13_ConditionalRendering';
+import PropsChildren from './components/13_props.children/Father';
+import Son from './components/13_props.children/Son';
+import ConditionalRendering from './components/14_ConditionalRendering';
 
 export default () => 
   (
-    /*<View>
+    <View>
       <FirstComponent />
       <CompDefault />
       <Comp2 />
@@ -32,8 +34,12 @@ export default () =>
       <IndirectFather/>
       <CounterV2/>
       <DifferentiateAndroidFromIos/>
-    </View>*/
-    <SafeAreaView>
+      <PropsChildren>
+          <Son first="Maria" last="Ribeiro" />
+          <Son first="Anabela" last="Mendes" />
+      </PropsChildren>
+    </View>
+    /*<SafeAreaView>
       <ConditionalRendering num={2} />
-    </SafeAreaView>
+    </SafeAreaView>*/
   );
