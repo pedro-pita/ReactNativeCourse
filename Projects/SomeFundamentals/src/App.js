@@ -14,12 +14,13 @@ import CounterV2 from './components/11_DirectAndIndirectCommunication/CounterV2'
 import DifferentiateAndroidFromIos from './components/12_DifferentiateAndroidFromIos';
 import PropsChildren from './components/13_props.children/Father';
 import Son from './components/13_props.children/Son';
-import ConditionalRendering from './components/14_ConditionalRendering';
+import ConditionalRendering from './components/14_ConditionalRendering/14_ConditionalRenderingExample1';
+import UserLoggedIn from './components/14_ConditionalRendering/Example2/UserLoggedIn';
 
 export default () => 
   (
-    <View>
-      <FirstComponent />
+     /*<View>
+     <FirstComponent />
       <CompDefault />
       <Comp2 />
       <Comp3 />
@@ -38,8 +39,9 @@ export default () =>
           <Son first="Maria" last="Ribeiro" />
           <Son first="Anabela" last="Mendes" />
       </PropsChildren>
-    </View>
-    /*<SafeAreaView>
+    </View>*/
+    <SafeAreaView>
       <ConditionalRendering num={2} />
-    </SafeAreaView>*/
+      <UserLoggedIn user = {{name: "Pedro Pita", email: "hpp.pedropita@gmail.com"}} />
+    </SafeAreaView>
   );
